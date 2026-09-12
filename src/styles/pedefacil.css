@@ -1,0 +1,406 @@
+/* ─── PedeFacil Landing Page Styles ─────────────────────────────────────── */
+
+.pedefacil-root {
+  --background: #fcf9f4;
+  --on-background: #1c1c19;
+  --surface: #fcf9f4;
+  --surface-bright: #fcf9f4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f6f3ee;
+  --surface-container: #f0ede9;
+  --surface-container-high: #ebe8e3;
+  --surface-container-highest: #e5e2dd;
+  --surface-dim: #dcdad5;
+  --surface-variant: #e5e2dd;
+  --on-surface: #1c1c19;
+  --on-surface-variant: #414844;
+  --primary: #022619;
+  --on-primary: #ffffff;
+  --primary-container: #1a3c2e;
+  --on-primary-container: #82a794;
+  --primary-fixed: #c5ebd7;
+  --primary-fixed-dim: #aacfbb;
+  --on-primary-fixed: #002115;
+  --on-primary-fixed-variant: #2c4d3e;
+  --secondary: #006d2f;
+  --on-secondary: #ffffff;
+  --secondary-container: #5dfd8a;
+  --on-secondary-container: #007232;
+  --secondary-fixed: #66ff8e;
+  --secondary-fixed-dim: #3de273;
+  --on-secondary-fixed: #002109;
+  --on-secondary-fixed-variant: #005322;
+  --tertiary: #311d00;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #4d3000;
+  --on-tertiary-container: #da8f00;
+  --tertiary-fixed: #ffddb4;
+  --tertiary-fixed-dim: #ffb955;
+  --on-tertiary-fixed: #291800;
+  --on-tertiary-fixed-variant: #633f00;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+  --outline: #727974;
+  --outline-variant: #c1c8c2;
+  --inverse-surface: #31302d;
+  --inverse-on-surface: #f3f0eb;
+  --inverse-primary: #aacfbb;
+  --surface-tint: #436555;
+  --whatsapp: #25d366;
+  --whatsapp-hover: #1ea853;
+}
+
+.pedefacil-root .bg-background {
+  background-color: var(--background);
+}
+.pedefacil-root .bg-surface {
+  background-color: var(--surface);
+}
+.pedefacil-root .bg-surface-bright {
+  background-color: var(--surface-bright);
+}
+.pedefacil-root .bg-surface-container-lowest {
+  background-color: var(--surface-container-lowest);
+}
+.pedefacil-root .bg-surface-container-low {
+  background-color: var(--surface-container-low);
+}
+.pedefacil-root .bg-surface-container {
+  background-color: var(--surface-container);
+}
+.pedefacil-root .bg-surface-container-high {
+  background-color: var(--surface-container-high);
+}
+.pedefacil-root .bg-surface-container-highest {
+  background-color: var(--surface-container-highest);
+}
+.pedefacil-root .bg-primary {
+  background-color: var(--primary);
+}
+.pedefacil-root .bg-primary-container {
+  background-color: var(--primary-container);
+}
+.pedefacil-root .bg-secondary {
+  background-color: var(--secondary);
+}
+.pedefacil-root .bg-secondary-container {
+  background-color: var(--secondary-container);
+}
+.pedefacil-root .bg-tertiary-fixed {
+  background-color: var(--tertiary-fixed);
+}
+.pedefacil-root .bg-error-container {
+  background-color: var(--error-container);
+}
+.pedefacil-root .bg-primary-fixed {
+  background-color: var(--primary-fixed);
+}
+.pedefacil-root .bg-whatsapp {
+  background-color: var(--whatsapp);
+}
+
+.pedefacil-root .text-on-surface {
+  color: var(--on-surface);
+}
+.pedefacil-root .text-on-surface-variant {
+  color: var(--on-surface-variant);
+}
+.pedefacil-root .text-on-background {
+  color: var(--on-background);
+}
+.pedefacil-root .text-on-primary {
+  color: var(--on-primary);
+}
+.pedefacil-root .text-on-primary-container {
+  color: var(--on-primary-container);
+}
+.pedefacil-root .text-on-secondary {
+  color: var(--on-secondary);
+}
+.pedefacil-root .text-on-secondary-container {
+  color: var(--on-secondary-container);
+}
+.pedefacil-root .text-on-tertiary-container {
+  color: var(--on-tertiary-container);
+}
+.pedefacil-root .text-on-error-container {
+  color: var(--on-error-container);
+}
+.pedefacil-root .text-primary {
+  color: var(--primary);
+}
+.pedefacil-root .text-secondary {
+  color: var(--secondary);
+}
+.pedefacil-root .text-tertiary-fixed-dim {
+  color: var(--tertiary-fixed-dim);
+}
+.pedefacil-root .text-error {
+  color: var(--error);
+}
+.pedefacil-root .text-surface-bright {
+  color: var(--surface-bright);
+}
+.pedefacil-root .text-on-error {
+  color: var(--on-error);
+}
+
+.pedefacil-root .border-outline-variant {
+  border-color: var(--outline-variant);
+}
+
+.pedefacil-root .shadow-sm {
+  box-shadow: 0px 4px 20px rgba(28, 28, 28, 0.05);
+}
+
+/* Typography classes */
+.pedefacil-root .font-headline-sm {
+  font-family: var(--font-headline);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.pedefacil-root .font-headline-md {
+  font-family: var(--font-headline);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.pedefacil-root .font-headline-lg {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+.pedefacil-root .font-headline-xl {
+  font-family: var(--font-headline);
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.pedefacil-root .font-body-sm {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.pedefacil-root .font-body-md {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.pedefacil-root .font-body-lg {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.pedefacil-root .font-label-md {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Material Symbols */
+.pedefacil-root .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* WhatsApp pulse animation */
+.pedefacil-root .whatsapp-pulse {
+  animation: pd-pulse 2s infinite;
+}
+@keyframes pd-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Layout utilities */
+.pedefacil-root .container-max {
+  max-width: 1200px;
+}
+.pedefacil-root .gutter {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .pedefacil-root .gutter {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Override global styles */
+.pedefacil-root body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+}
+
+.pedefacil-root a:not([class*="text-"]):not([class*="btn"]) {
+  color: inherit;
+}
+
+/* ─── Standardized Button Component ───────────────────────────────────────── */
+.pedefacil-root .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  font-family: var(--font-headline);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.pedefacil-root .btn-md {
+  padding: 10px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pedefacil-root .btn-lg {
+  padding: 14px 32px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Primary Button (Brand Green) */
+.pedefacil-root .btn-primary {
+  background-color: var(--secondary) !important;
+  color: var(--on-secondary) !important;
+  box-shadow: 0px 4px 14px rgba(0, 109, 47, 0.15);
+}
+
+.pedefacil-root .btn-primary:hover {
+  background-color: #005625 !important;
+  box-shadow: 0px 6px 20px rgba(0, 109, 47, 0.25);
+  transform: translateY(-2px);
+}
+
+.pedefacil-root .btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Outline Button (Dark Brand Green/Primary) */
+.pedefacil-root .btn-outline {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+}
+
+.pedefacil-root .btn-outline:hover {
+  background-color: var(--primary) !important;
+  color: var(--on-primary) !important;
+  transform: translateY(-2px);
+}
+
+.pedefacil-root .btn-outline:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Light Outline Button (for Dark Backgrounds) */
+.pedefacil-root .btn-outline-light {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: var(--surface-bright) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.pedefacil-root .btn-outline-light:hover {
+  background-color: var(--surface-bright) !important;
+  color: var(--primary) !important;
+  border-color: var(--surface-bright) !important;
+  transform: translateY(-2px);
+}
+
+.pedefacil-root .btn-outline-light:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* WhatsApp Button */
+.pedefacil-root .btn-whatsapp {
+  background-color: var(--whatsapp) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.2);
+}
+
+.pedefacil-root .btn-whatsapp:hover {
+  background-color: var(--whatsapp-hover) !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+  transform: translateY(-2px);
+}
+
+.pedefacil-root .btn-whatsapp:active {
+  transform: translateY(0) scale(0.98);
+}
+
+
+.pedefacil-root .bg-on-surface\/5 {
+  background-color: rgba(28, 28, 28, 0.05);
+}
+
+.pedefacil-root .bg-secondary-container\/20 {
+  background-color: rgba(93, 253, 138, 0.2);
+}
+
+.pedefacil-root .bg-surface-container-lowest\/5 {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.pedefacil-root .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.pedefacil-root .border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pedefacil-root .bg-surface-bright\/5 {
+  background-color: rgba(252, 249, 244, 0.05);
+}
+.pedefacil-root .bg-surface-bright\/10 {
+  background-color: rgba(252, 249, 244, 0.1);
+}
+.pedefacil-root .border-surface-bright\/30 {
+  border-color: rgba(252, 249, 244, 0.3);
+}
+
+/* Smooth scrolling */
+.pedefacil-root {
+  scroll-behavior: smooth;
+}
+
+/* Responsive headline adjustments */
+@media (max-width: 768px) {
+  .pedefacil-root .font-headline-xl {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .pedefacil-root .font-headline-lg {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .pedefacil-root .font-headline-md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

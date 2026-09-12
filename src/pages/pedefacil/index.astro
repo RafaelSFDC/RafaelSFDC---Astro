@@ -1,0 +1,31 @@
+---
+import PedeFacilPage from '../../components/pedefacil/PedeFacilPage.tsx';
+import '../../styles/pedefacil.css';
+
+const title = 'PedeFacil - Cardápio Digital White Label | Sem Assinatura & Código Próprio';
+const description = 'Cardápio digital profissional para restaurantes. Sem comissão e sem assinatura. Adquira a licença do código fonte e tenha total independência do seu delivery.';
+---
+
+<!doctype html>
+<html lang="pt-BR" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href="https://pedefacil.com.br" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="PedeFacil - Cardápio Digital & Pedidos via WhatsApp | Taxa Zero" />
+    <meta property="og:description" content="Automatize seus pedidos, economize com taxas e tenha total controle do seu negócio com um sistema simples e potente." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  </head>
+  <body class="pedefacil-root">
+    <PedeFacilPage client:load />
+  </body>
+</html>

@@ -1,0 +1,81 @@
+---
+import '../styles/globals.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = 'Rafael SFDC | Desenvolvedor Full-Stack, Next.js & SEO Técnico',
+  description = 'Portfólio de Rafael SFDC, desenvolvedor full-stack especializado em Next.js, React, performance web, SEO técnico e aplicações sob medida.',
+  canonical = '/',
+  ogImage = '/optimized-app.webp',
+  ogType = 'website',
+  noindex = false,
+} = Astro.props;
+
+const SITE_URL = import.meta.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.vercel.app';
+const SITE_NAME = 'Rafael SFDC';
+const canonicalURL = new URL(canonical, SITE_URL).toString();
+const ogImageURL = ogImage.startsWith('http') ? ogImage : new URL(ogImage, SITE_URL).toString();
+---
+
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex ? <meta name="robots" content="noindex, nofollow" /> : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+      inLanguage: "pt-BR",
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
+      name: "Rafael SFDC",
+      jobTitle: "Desenvolvedor Full-Stack",
+      url: SITE_URL,
+    })} />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('theme') || 'dark';
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
