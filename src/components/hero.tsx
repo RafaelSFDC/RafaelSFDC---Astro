@@ -13,14 +13,6 @@ const Hero5 = () => {
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-margin-mobile pt-32 pb-section-gap relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1024px] glow-bg -z-10 pointer-events-none" />
 
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-surface-tint/30 bg-surface-tint/5 text-surface-tint mb-8 font-label-sm text-label-sm">
-        <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-surface-tint opacity-75" />
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-surface-tint" />
-        </span>
-        Disponível para projetos
-      </div>
-
       <h1 className="font-body text-display-xl-mobile md:text-display-xl mb-6 max-w-4xl mx-auto text-balance">
         SaaS e sites que carregam rápido e convertem
         <span className="text-surface-tint animate-blink">_</span>

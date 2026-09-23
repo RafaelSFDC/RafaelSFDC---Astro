@@ -8,10 +8,19 @@ import { ProjectLandingModal } from "@/components/project-landing-modal"
 interface SiteCardProps {
   project: ProjectDetails
   badge?: "Cliente" | "White Label"
+  onOpenDetails?: () => void
 }
 
-export function SiteCard({ project, badge }: SiteCardProps) {
+export function SiteCard({ project, badge, onOpenDetails }: SiteCardProps) {
   const [showDetails, setShowDetails] = useState(false)
+
+  const handleOpen = () => {
+    if (onOpenDetails) {
+      onOpenDetails()
+    } else {
+      setShowDetails(true)
+    }
+  }
 
   return (
     <>
@@ -57,7 +66,7 @@ export function SiteCard({ project, badge }: SiteCardProps) {
           </div>
           <div className="flex gap-3 mt-auto">
             <button
-              onClick={() => setShowDetails(true)}
+              onClick={handleOpen}
               aria-label={`Ver detalhes de ${project.title}`}
               className="flex-1 px-4 py-2.5 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs"
             >
@@ -85,8 +94,9 @@ export function SiteCard({ project, badge }: SiteCardProps) {
         </div>
       </div>
 
-      <ProjectLandingModal project={project} open={showDetails} onOpenChange={setShowDetails} />
+      {!onOpenDetails && (
+        <ProjectLandingModal project={project} open={showDetails} onOpenChange={setShowDetails} />
+      )}
     </>
   )
 }
-

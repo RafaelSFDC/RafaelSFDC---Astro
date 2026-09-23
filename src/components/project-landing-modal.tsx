@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react"
 import type { ProjectDetails } from "@/types/project"
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle, DialogClose } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
 import {
   ExternalLink,
@@ -488,7 +488,7 @@ export function ProjectLandingModal({ project, open, onOpenChange }: ProjectLand
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="dialog-scroll bg-[#050505] border border-white/8 text-white w-full max-w-[calc(100vw-1.5rem)] sm:max-w-4xl max-h-[92vh] overflow-y-auto p-0 gap-0 rounded-2xl shadow-2xl shadow-black/80 [&>button]:hidden">
+      <DialogContent hideCloseButton className="dialog-scroll bg-[#050505] border border-white/8 text-white w-full max-w-[calc(100vw-1.5rem)] sm:max-w-4xl max-h-[92vh] overflow-y-auto p-0 gap-0 rounded-2xl shadow-2xl shadow-black/80">
         {/* Hidden accessible title */}
         <DialogTitle className="sr-only">{project.title}</DialogTitle>
 
@@ -514,12 +514,15 @@ export function ProjectLandingModal({ project, open, onOpenChange }: ProjectLand
           </div>
 
           {/* Close button */}
-          <button
-            onClick={() => onOpenChange(false)}
-            className="flex-shrink-0 w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/8 hover:border-white/20 transition-all"
-          >
-            <X className="w-4 h-4 text-white/60" />
-          </button>
+          <DialogClose asChild>
+            <button
+              type="button"
+              aria-label="Fechar modal"
+              className="flex-shrink-0 w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/8 hover:border-white/20 transition-all"
+            >
+              <X className="w-4 h-4 text-white/60" />
+            </button>
+          </DialogClose>
         </div>
 
         {/* Body */}

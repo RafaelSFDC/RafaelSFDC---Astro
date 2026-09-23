@@ -74,6 +74,12 @@ const skillCategories = [
 export default function Home() {
   const revealRefs = useRef<(HTMLElement | null)[]>([])
   const [detailsProject, setDetailsProject] = useState<ProjectDetails | null>(null)
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false)
+
+  const handleOpenDetails = (project: ProjectDetails) => {
+    setDetailsProject(project)
+    setIsDetailsOpen(true)
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -147,7 +153,7 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <button
-              onClick={() => setDetailsProject(project)}
+              onClick={() => handleOpenDetails(project)}
               aria-label={`Ver detalhes de ${project.title}`}
               className="px-6 py-3 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center gap-2 hover:brightness-110 transition-all text-sm"
             >
@@ -205,10 +211,20 @@ export default function Home() {
             ref={addToRefs}
           >
             {sites.map((site) => (
-              <SiteCard key={site.id} project={site} badge="Cliente" />
+              <SiteCard
+                key={site.id}
+                project={site}
+                badge="Cliente"
+                onOpenDetails={() => handleOpenDetails(site)}
+              />
             ))}
             {sistemas.map((sistema) => (
-              <SiteCard key={sistema.id} project={sistema} badge="White Label" />
+              <SiteCard
+                key={sistema.id}
+                project={sistema}
+                badge="White Label"
+                onOpenDetails={() => handleOpenDetails(sistema)}
+              />
             ))}
           </div>
         </section>
@@ -255,7 +271,7 @@ export default function Home() {
           id="sobre"
           className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
         >
-          <SectionHeading icon={Search}>Sobre Rafael</SectionHeading>
+          <SectionHeading icon={Search}>Sobre</SectionHeading>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
             <div className="glass-card p-10 rounded-2xl">
@@ -382,8 +398,8 @@ export default function Home() {
       {detailsProject && (
         <ProjectLandingModal
           project={detailsProject}
-          open={!!detailsProject}
-          onOpenChange={(open) => { if (!open) setDetailsProject(null) }}
+          open={isDetailsOpen}
+          onOpenChange={setIsDetailsOpen}
         />
       )}
     </div>
