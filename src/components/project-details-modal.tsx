@@ -119,12 +119,11 @@ export function ProjectDetailsModal({ project, open, onOpenChange }: ProjectDeta
             <>
               {project.demoUrl && (
                 <Button
-                  variant="outline"
-                  className="bg-orange-500/10 text-orange-400 border-orange-500/20 hover:bg-orange-500/20"
+                  className="bg-primary-container text-on-primary-container hover:brightness-110 font-bold border-0"
                   asChild
                 >
                   <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Ver Online
+                    <ExternalLink className="mr-2 h-4 w-4" /> Visitar Site
                   </a>
                 </Button>
               )}
@@ -133,7 +132,7 @@ export function ProjectDetailsModal({ project, open, onOpenChange }: ProjectDeta
               {project.codeUrl && isPublic && (
                 <Button
                   variant="outline"
-                  className="bg-orange-500/10 text-orange-400 border-orange-500/20 hover:bg-orange-500/20"
+                  className="border-white/20 text-white/80 hover:bg-white/5"
                   asChild
                 >
                   <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">

@@ -240,7 +240,7 @@ function SaaSContent({ project }: { project: ProjectDetails }) {
       <div className="pt-2 border-t border-white/8 flex flex-wrap gap-3">
         {project.demoUrl && (
           <CTAPrimary href={project.demoUrl} icon={ExternalLink}>
-            Ver Demo Online
+            Visitar Demo
           </CTAPrimary>
         )}
         {project.codeUrl && isPublic && (
@@ -320,7 +320,7 @@ function ClientContent({ project }: { project: ProjectDetails }) {
       <div className="pt-2 border-t border-white/8 flex flex-wrap gap-3">
         {project.demoUrl && (
           <CTAPrimary href={project.demoUrl} icon={ExternalLink}>
-            Ver Projeto Online
+            Visitar Site
           </CTAPrimary>
         )}
         <CTAPrimary href={getWhatsAppUrl(project.title, "like_this")} icon={MessageCircle}>

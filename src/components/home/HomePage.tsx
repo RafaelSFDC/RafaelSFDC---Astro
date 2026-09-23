@@ -191,24 +191,24 @@ export default function Home() {
           <p className="text-on-surface-variant mb-8 leading-relaxed">
             {project.description}
           </p>
-          <div className="flex gap-4">
-            <button
-              onClick={() => handleOpenDetails(project)}
-              aria-label={`Ver detalhes de ${project.title}`}
-              className="px-6 py-3 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center gap-2 hover:brightness-110 transition-all text-sm"
-            >
-              <Eye className="size-4" /> Detalhes
-            </button>
+          <div className="flex gap-3 sm:gap-4 mt-auto">
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-white/20 hover:border-surface-tint/50 text-white font-bold rounded-xl flex items-center gap-2 transition-all text-sm"
+                className="flex-1 sm:flex-initial px-4 sm:px-6 py-3 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs sm:text-sm whitespace-nowrap"
               >
-                <ExternalLink className="size-4" /> Online
+                <ExternalLink className="size-4" /> Visitar Site
               </a>
             )}
+            <button
+              onClick={() => handleOpenDetails(project)}
+              aria-label={`Ver detalhes de ${project.title}`}
+              className="flex-1 sm:flex-initial px-4 sm:px-6 py-3 border border-white/20 hover:border-surface-tint/50 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all text-xs sm:text-sm whitespace-nowrap"
+            >
+              <Eye className="size-4" /> Detalhes
+            </button>
           </div>
         </div>
       </div>
@@ -382,9 +382,9 @@ export default function Home() {
           id="contato"
           className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap mb-section-gap"
         >
-          <div className="glass-card p-12 md:p-20 rounded-2xl text-center relative overflow-hidden">
+          <div className="glass-card p-6 sm:p-12 md:p-20 rounded-2xl text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full glow-bg opacity-30 pointer-events-none" />
-            <h2 className="font-display-xl-mobile md:font-headline-lg text-display-xl-mobile md:text-headline-lg mb-8">
+            <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 sm:mb-8">
               Vamos Conversar?
             </h2>
             <p className="text-on-surface-variant max-w-xl mx-auto mb-12">

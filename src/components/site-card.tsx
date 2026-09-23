@@ -65,31 +65,31 @@ export function SiteCard({ project, badge, onOpenDetails }: SiteCardProps) {
             )}
           </div>
           <div className="flex gap-3 mt-auto">
-            <button
-              onClick={handleOpen}
-              aria-label={`Ver detalhes de ${project.title}`}
-              className="flex-1 px-4 py-2.5 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs"
-            >
-              <Info className="size-4" /> Detalhes
-            </button>
-            {project.landingPageUrl && project.type !== "whitelabel" && (
-              <a
-                href={project.landingPageUrl}
-                className="flex-1 px-4 py-2.5 bg-surface-tint text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs"
-              >
-                <Globe className="size-4" /> Landing Page
-              </a>
-            )}
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 px-4 py-2.5 border border-white/20 hover:border-surface-tint/50 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all text-xs"
+                className="flex-1 px-4 py-2.5 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs whitespace-nowrap"
               >
-                <ExternalLink className="size-4" /> Online
+                <ExternalLink className="size-4" /> Visitar Site
               </a>
             )}
+            {project.landingPageUrl && project.type !== "whitelabel" && (
+              <a
+                href={project.landingPageUrl}
+                className="flex-1 px-4 py-2.5 bg-surface-tint text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs whitespace-nowrap"
+              >
+                <Globe className="size-4" /> Landing Page
+              </a>
+            )}
+            <button
+              onClick={handleOpen}
+              aria-label={`Ver detalhes de ${project.title}`}
+              className="flex-1 px-4 py-2.5 border border-white/20 hover:border-surface-tint/50 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all text-xs whitespace-nowrap"
+            >
+              <Info className="size-4" /> Detalhes
+            </button>
           </div>
         </div>
       </div>

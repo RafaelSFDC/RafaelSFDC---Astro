@@ -86,6 +86,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </CardContent>
 
         <CardFooter className="relative z-20 flex gap-2 pt-2 border-t border-zinc-800/50 mt-auto bg-zinc-950/20">
+          {!isPrivate && project.demoUrl && (
+            <Button
+              size="sm"
+              className="h-9 flex-1 rounded-full bg-orange-500 text-xs font-semibold text-zinc-950 transition-all hover:bg-orange-400"
+              asChild
+            >
+              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Visitar Site
+              </a>
+            </Button>
+          )}
+
           <Button
             variant="ghost"
             size="sm"
@@ -95,38 +107,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <Info className="mr-1.5 h-3.5 w-3.5" /> Detalhes
           </Button>
 
-          {isPrivate ? (
+          {isPrivate && (
             <div className="flex h-9 flex-1 items-center justify-center rounded-full bg-zinc-800/40 text-[10px] font-medium uppercase tracking-wider text-zinc-300">
               <Lock className="mr-1.5 h-3 w-3" /> Privado
             </div>
-          ) : (
-            <div className="flex flex-1 gap-2">
-              {project.demoUrl && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="h-9 flex-1 rounded-full border-orange-500/20 bg-orange-500/5 text-xs font-semibold text-orange-400 transition-all hover:bg-orange-500 hover:text-zinc-950 hover:border-orange-500"
-                  asChild
-                >
-                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Online
-                  </a>
-                </Button>
-              )}
+          )}
 
-              {project.codeUrl && isPublic && (
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-9 flex-1 rounded-full text-xs font-medium text-zinc-400 hover:bg-zinc-800 hover:text-white"
-                  asChild
-                >
-                  <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                    <Code className="mr-1.5 h-3.5 w-3.5" /> Código
-                  </a>
-                </Button>
-              )}
-            </div>
+          {project.codeUrl && isPublic && (
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-9 flex-1 rounded-full text-xs font-medium text-zinc-400 hover:bg-zinc-800 hover:text-white"
+              asChild
+            >
+              <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                <Code className="mr-1.5 h-3.5 w-3.5" /> Código
+              </a>
+            </Button>
           )}
         </CardFooter>
       </Card>
