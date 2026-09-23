@@ -50,7 +50,9 @@ import {
   SiFigma,
   SiGooglegemini,
   SiWebrtc,
+  SiWhatsapp,
 } from "react-icons/si"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { ProjectLandingModal } from "@/components/project-landing-modal"
 import type { ProjectDetails } from "@/types/project"
 
@@ -387,7 +389,7 @@ export default function Home() {
             </h2>
             <p className="text-on-surface-variant max-w-xl mx-auto mb-12">
               Conte com quem já entregou 30+ projetos: SaaS, sistemas e sites
-              que performam. Chama no email, no telefone ou no LinkedIn.
+              que performam. Chama no email, no WhatsApp ou no LinkedIn.
             </p>
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-12">
@@ -407,14 +409,17 @@ export default function Home() {
               </a>
 
               <a
-                href="tel:+5521979674045"
+                href="https://api.whatsapp.com/send?phone=5521979674045&text=Ol%C3%A1%20Rafael!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-col items-center group"
+                aria-label="Conversar com Rafael pelo WhatsApp"
               >
                 <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-4 group-hover:border-surface-tint/50 transition-colors">
-                  <Smartphone className="size-8 text-surface-tint" />
+                  <SiWhatsapp className="size-8 text-surface-tint" />
                 </div>
                 <span className="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">
-                  Telefone
+                  WhatsApp
                 </span>
                 <span className="font-headline-md text-headline-md group-hover:text-surface-tint transition-colors">
                   +55 (21) 97967-4045
@@ -422,22 +427,24 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-16 flex flex-wrap justify-center gap-6">
+            <div className="mt-16 flex flex-wrap justify-center items-center gap-4">
               <a
                 href="https://github.com/RafaelSFDC"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-white text-black font-bold rounded-xl flex items-center gap-2 hover:scale-105 transition-all"
+                aria-label="GitHub de Rafael SFDC"
+                className="size-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 hover:border-surface-tint/50 hover:scale-105 transition-all"
               >
-                GitHub
+                <FaGithub className="size-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 border border-white/20 font-bold rounded-xl flex items-center gap-2 hover:bg-white/5 transition-all"
+                aria-label="LinkedIn de Rafael SFDC"
+                className="size-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 hover:border-surface-tint/50 hover:scale-105 transition-all"
               >
-                LinkedIn
+                <FaLinkedinIn className="size-5" />
               </a>
               <DownloadResume />
             </div>

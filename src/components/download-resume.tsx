@@ -15,10 +15,10 @@ export default function DownloadResume() {
   return (
     <button
       onClick={handleDownload}
-      className="px-8 py-3 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center gap-2 hover:brightness-110 transition-all"
+      className="h-12 px-8 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center gap-2 hover:brightness-110 hover:scale-[1.02] transition-all"
     >
       <Download className="size-5" />
-      Baixar Currículo
+      Currículo
     </button>
   );
 }

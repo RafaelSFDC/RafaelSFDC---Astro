@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const homeMenuItems = [
-  { name: "SaaS", href: "#projetos" },
+  { name: "Produtos", href: "#projetos" },
   { name: "Trabalhos", href: "#trabalhos" },
-  { name: "Skills", href: "#habilidades" },
+  { name: "Habilidades", href: "#habilidades" },
   { name: "Sobre", href: "#sobre" },
   { name: "Blog", href: "/blog" },
   { name: "Contato", href: "#contato" },
