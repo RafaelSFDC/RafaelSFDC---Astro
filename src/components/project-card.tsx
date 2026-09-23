@@ -77,7 +77,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 </Badge>
               ))}
               {project.technologies.length > 4 && (
-                <Badge variant="outline" className="rounded-full bg-zinc-800/50 px-2.5 py-0.5 text-[10px] font-medium text-zinc-500 border-zinc-700">
+                <Badge variant="outline" className="rounded-full bg-zinc-800/50 px-2.5 py-0.5 text-[10px] font-medium text-zinc-300 border-zinc-700">
                   +{project.technologies.length - 4}
                 </Badge>
               )}
@@ -96,7 +96,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </Button>
 
           {isPrivate ? (
-            <div className="flex h-9 flex-1 items-center justify-center rounded-full bg-zinc-800/40 text-[10px] font-medium uppercase tracking-wider text-zinc-500">
+            <div className="flex h-9 flex-1 items-center justify-center rounded-full bg-zinc-800/40 text-[10px] font-medium uppercase tracking-wider text-zinc-300">
               <Lock className="mr-1.5 h-3 w-3" /> Privado
             </div>
           ) : (

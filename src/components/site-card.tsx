@@ -59,7 +59,7 @@ export function SiteCard({ project, badge, onOpenDetails }: SiteCardProps) {
               </span>
             ))}
             {project.technologies.length > 3 && (
-              <span className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-[10px] font-label-sm uppercase tracking-wider text-zinc-500">
+              <span className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-[10px] font-label-sm uppercase tracking-wider text-zinc-300">
                 +{project.technologies.length - 3}
               </span>
             )}

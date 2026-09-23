@@ -1,0 +1,41 @@
+# Rafael SFDC — Portfólio & Perfil Profissional
+
+> Desenvolvedor Full-Stack especializado em Next.js, React, Astro, Cloudflare Edge, performance web e SEO técnico. Mais de 6 anos de experiência e 30+ projetos entregues com foco em produtos SaaS, arquitetura multitenant, sistemas sob medida e e-commerces de alta conversão.
+
+## Resumo Profissional
+- Nome: Rafael Silva Ferreira de Carvalho (Rafael SFDC)
+- Título: Desenvolvedor Full-Stack & Especialista em SEO Técnico / Performance Web
+- Localização: Rio de Janeiro, Brasil
+- Email: rafaelsfcarvalho@outlook.com
+- Telefone / WhatsApp: +55 (21) 97967-4045
+- GitHub: https://github.com/RafaelSFDC
+- LinkedIn: https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho
+- Website Principal: https://rafaelsfcarvalho.com
+
+## Stack Tecnológica & Competências
+- Frontend & Web: React 19, Next.js (App Router, SSR, SSG), Astro, TanStack (Start, Router, Query), TypeScript, Tailwind CSS (v3 / v4), React Native.
+- Backend & Edge: Node.js, Express, PHP, Laravel, Cloudflare Workers & Pages, Durable Objects, WebSockets, WebRTC (P2P Audio & Mesh), Better Auth.
+- Inteligência Artificial: Google Gemini API, AI SDK, automação e integrações de agentes inteligentes.
+- Bancos de Dados & Storage: Cloudflare D1 (Serverless SQL), PostgreSQL, MySQL, SQLite, Drizzle ORM, Prisma ORM, Redis, Cloudflare R2 (Object Storage).
+- DevOps, Qualidade & SEO: Core Web Vitals, SEO Técnico, Otimização de Performance, Docker, Git / GitHub CI/CD, Metodologias Ágeis (Scrum), UI/UX Design (Figma).
+
+## Principais Produtos SaaS & Projetos
+- Reroll: Plataforma completa de catálogo e comunidade social para animes, mangás, games, séries e livros. Possui chat em tempo real via Cloudflare Durable Objects, chamadas de voz P2P com WebRTC, TanStack Start, React 19, Drizzle ORM, Cloudflare D1 e Better Auth.
+  - Link de Demonstração: https://reroll.rafaelsfcarvalho.workers.dev/
+  - Código: https://github.com/RafaelSFDC/Reroll
+- Kataly: Plataforma SaaS all-in-one para microempreendedores unificando CRM, Vendas, Page Builder (Puck) drag-and-drop e assistente nativo de IA (Gemini).
+  - Link: https://kataly.com.br
+  - Código: https://github.com/RafaelSFDC/kataly
+- PedeFácil: Sistema completo de cardápio digital, gestão de pedidos e delivery para restaurantes e pizzarias, integrando painel administrativo e checkout direto no WhatsApp.
+- VendaFácil: Solução para automação de checkout, catálogo interativo e vendas no varejo.
+- UniLink: Dashboard analítico e encurtador inteligente de links com métricas de cliques e conversão em tempo real.
+
+## Estrutura do Site & Links Principais
+- Início: https://rafaelsfcarvalho.com/
+- Produtos SaaS: https://rafaelsfcarvalho.com/#projetos
+- Trabalhos & Projetos de Clientes: https://rafaelsfcarvalho.com/#trabalhos
+- Habilidades Técnicas: https://rafaelsfcarvalho.com/#habilidades
+- Sobre: https://rafaelsfcarvalho.com/#sobre
+- Blog & Artigos: https://rafaelsfcarvalho.com/blog
+- Contato: https://rafaelsfcarvalho.com/#contato
+- Currículo em Markdown: https://rafaelsfcarvalho.com/Curriculo_Rafael_Carvalho.md
