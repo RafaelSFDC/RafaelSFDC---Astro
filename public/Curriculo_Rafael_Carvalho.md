@@ -14,13 +14,13 @@ Desenvolvedor Full-Stack com 6 anos de experiência como freelancer, especializa
 - **Design de Produto:** Responsável pela definição do fluxo de funcionalidades e criação do design responsivo, garantindo uma navegação intuitiva
 
 **Projetos**  
-[**Kataly \- Sistema operacional completo para negócios digitais**](http://kataly.com.br)
+[**Kataly \- Sistema operacional e ecossistema all-in-one para negócios digitais**](https://kataly.com.br)
 
-- **Arquitetura SaaS Multitenant:** Desenvolvimento de uma plataforma integrada que combina gestão de relacionamento com o cliente (CRM) e um construtor de páginas personalizado em um único ecossistema.
-- **Motor de Renderização Dinâmico:** Criação de um Page Builder proprietário que permite aos usuários gerarem sites, lojas e landing pages através de uma interface visual.
-- **Ecossistema de E-commerce End-to-End:** Implementação de uma infraestrutura completa de vendas, incluindo catálogo de produtos, checkout com gateways de pagamento, motores de cálculo de frete e sistema de cupons.
-- **Business Intelligence & Automação:** Implementação de ferramentas para coleta e processamento de dados, transformando métricas operacionais em suporte estratégico para a tomada de decisão dos usuários.
-- **Gestão Centralizada (Back-Office):** Sistema robusto para controle de vendas, estoque e base de clientes com foco em escalabilidade e performance
+- **Arquitetura SaaS Multi-Workspace & Edge:** Desenvolvimento de plataforma serverless com isolamento por workspace utilizando TanStack Start, React 19, Cloudflare Workers, D1 (SQLite distribuído), R2 Storage, Durable Objects e Better Auth.
+- **4 Verticais Integradas com Sub-sites:** Implementação de módulos dedicados e storefronts públicos independentes para Lojas Virtuais, Restaurantes/Delivery (PDV, KDS, mesas), Serviços Profissionais (agenda, ordens de serviço, contratos, SLA) e Imobiliárias.
+- **WhatsApp Cloud API Oficial & IA (Gemini):** Integração nativa com a API oficial da Meta, provendo caixa de entrada unificada multi-tenant, disparo de templates e agente autônomo com IA para atendimento 24/7.
+- **Page Builder & Automação de Workflows:** Integração de construtor visual drag-and-drop (Puck CMS) com IA e editor gráfico de workflows em nós via XY Flow para automação de processos ponta a ponta.
+- **Infraestrutura Completa de Vendas & Back-Office:** Checkout transparente via Mercado Pago (PIX instantâneo) e Stripe, CRM com funil Kanban, gestão financeira, faturas públicas e integração com Bling ERP e SuperFrete.
 
 **Habilidades Técnicas**  
 **Frontend & Mobile :** React (React 19) | Next.js | TanStack (Start, Router, Query) | TypeScript | Tailwind CSS | Astro | React Native  

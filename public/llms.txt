@@ -23,7 +23,7 @@
 - Reroll: Plataforma completa de catálogo e comunidade social para animes, mangás, games, séries e livros. Possui chat em tempo real via Cloudflare Durable Objects, chamadas de voz P2P com WebRTC, TanStack Start, React 19, Drizzle ORM, Cloudflare D1 e Better Auth.
   - Link de Demonstração: https://reroll.rafaelsfcarvalho.workers.dev/
   - Código: https://github.com/RafaelSFDC/Reroll
-- Kataly: Plataforma SaaS all-in-one para microempreendedores unificando CRM, Vendas, Page Builder (Puck) drag-and-drop e assistente nativo de IA (Gemini).
+- Kataly: Plataforma SaaS all-in-one multi-workspace para negócios digitais com 4 verticais (Lojas, Restaurantes, Serviços e Imobiliárias), sub-sites públicos, WhatsApp Cloud API oficial (Meta) com IA (Gemini), workflows em nós (XY Flow), Puck CMS, CRM e checkout transparente. Construído com TanStack Start, React 19, Cloudflare Edge (D1, R2, Durable Objects) e Drizzle ORM.
   - Link: https://kataly.com.br
   - Código: https://github.com/RafaelSFDC/kataly
 - PedeFácil: Sistema completo de cardápio digital, gestão de pedidos e delivery para restaurantes e pizzarias, integrando painel administrativo e checkout direto no WhatsApp.
