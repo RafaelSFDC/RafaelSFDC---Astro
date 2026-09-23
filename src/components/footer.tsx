@@ -1,10 +1,6 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-interface FooterProps {
-  navigationMode?: "home" | "blog";
-}
-
-export default function Footer({ navigationMode = "home" }: FooterProps) {
+export default function Footer() {
   const homeHref = "/";
 
   return (

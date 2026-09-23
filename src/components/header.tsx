@@ -4,32 +4,19 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
-const homeMenuItems = [
+const menuItems = [
   { name: "Produtos", href: "#projetos" },
   { name: "Trabalhos", href: "#trabalhos" },
   { name: "Habilidades", href: "#habilidades" },
   { name: "Sobre", href: "#sobre" },
-  { name: "Blog", href: "/blog" },
   { name: "Contato", href: "#contato" },
 ];
 
-const blogMenuItems = [
-  { name: "Home", href: "/" },
-  { name: "Projetos", href: "/#projetos" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contato", href: "/#contato" },
-];
-
-interface HeroHeaderProps {
-  navigationMode?: "home" | "blog";
-}
-
-const HeroHeader = ({ navigationMode = "home" }: HeroHeaderProps) => {
+const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [hidden, setHidden] = React.useState(false);
   const lastScroll = React.useRef(0);
-  const menuItems = navigationMode === "blog" ? blogMenuItems : homeMenuItems;
 
   const handleScroll = React.useCallback(() => {
     if (menuState) return;
@@ -89,7 +76,7 @@ const HeroHeader = ({ navigationMode = "home" }: HeroHeaderProps) => {
     >
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
         <a
-          href={navigationMode === "blog" ? "/" : "#"}
+          href="/"
           className="flex items-center gap-3"
           aria-label="Rafael SFDC - Início"
         >

@@ -32,6 +32,5 @@
 - [Trabalhos & Clientes](https://rafaelsfcarvalho.com/#trabalhos): Projetos corporativos e sites desenvolvidos para clientes
 - [Habilidades Técnicas](https://rafaelsfcarvalho.com/#habilidades): Stack detalhada, tecnologias frontend, backend, bancos e edge
 - [Sobre Mim](https://rafaelsfcarvalho.com/#sobre): Trajetória profissional, metodologia de trabalho e experiência
-- [Blog & Artigos](https://rafaelsfcarvalho.com/blog): Artigos técnicos sobre desenvolvimento web, arquitetura e SEO
 - [Contato](https://rafaelsfcarvalho.com/#contato): Formulário de contato direto e canais de atendimento
 - [Currículo em Markdown](https://rafaelsfcarvalho.com/Curriculo_Rafael_Carvalho.md): Versão completa do currículo estruturada em Markdown
