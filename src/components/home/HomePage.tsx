@@ -18,9 +18,58 @@ import {
   Eye,
   Mail,
   Smartphone,
+  Kanban,
 } from "lucide-react"
+import {
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiVuedotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiPhp,
+  SiPostgresql,
+  SiRedis,
+  SiDocker,
+  SiGit,
+  SiFigma,
+} from "react-icons/si"
+import { TbApi, TbSeo } from "react-icons/tb"
 import { ProjectLandingModal } from "@/components/project-landing-modal"
 import type { ProjectDetails } from "@/types/project"
+
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "HTML / CSS", icon: SiHtml5 },
+      { name: "JAVASCRIPT / TYPESCRIPT", icon: SiJavascript },
+      { name: "REACT / NEXT.JS", icon: SiReact },
+      { name: "VUE.JS", icon: SiVuedotjs },
+      { name: "TAILWIND CSS", icon: SiTailwindcss },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "NODE.JS / EXPRESS", icon: SiNodedotjs },
+      { name: "PHP / LARAVEL", icon: SiPhp },
+      { name: "POSTGRESQL / MONGODB", icon: SiPostgresql },
+      { name: "REDIS / FIREBASE", icon: SiRedis },
+      { name: "RESTful APIs", icon: TbApi },
+    ],
+  },
+  {
+    title: "Workflow",
+    skills: [
+      { name: "DOCKER / CI-CD", icon: SiDocker },
+      { name: "GIT / GITHUB", icon: SiGit },
+      { name: "UI/UX DESIGN (FIGMA)", icon: SiFigma },
+      { name: "AGILE / SCRUM", icon: Kanban },
+      { name: "SEO OPTIMIZATION", icon: TbSeo },
+    ],
+  },
+]
 
 export default function Home() {
   const revealRefs = useRef<(HTMLElement | null)[]>([])
@@ -173,68 +222,30 @@ export default function Home() {
             <SectionHeading icon={Code2}>Habilidades Técnicas</SectionHeading>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              <div className="glass-card p-10 rounded-2xl border-l-4 border-l-surface-tint">
-                <h3 className="font-headline-md text-headline-md mb-8">Frontend</h3>
-                <ul className="space-y-4 font-label-sm text-label-sm">
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> HTML / CSS
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> JAVASCRIPT / TYPESCRIPT
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> REACT / NEXT.JS
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> VUE.JS
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> TAILWIND CSS
-                  </li>
-                </ul>
-              </div>
-
-              <div className="glass-card p-10 rounded-2xl border-l-4 border-l-surface-tint">
-                <h3 className="font-headline-md text-headline-md mb-8">Backend</h3>
-                <ul className="space-y-4 font-label-sm text-label-sm">
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> NODE.JS / EXPRESS
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> PHP / LARAVEL
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> POSTGRESQL / MONGODB
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> REDIS / FIREBASE
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> RESTful APIs
-                  </li>
-                </ul>
-              </div>
-
-              <div className="glass-card p-10 rounded-2xl border-l-4 border-l-surface-tint">
-                <h3 className="font-headline-md text-headline-md mb-8">Workflow</h3>
-                <ul className="space-y-4 font-label-sm text-label-sm">
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> DOCKER / CI-CD
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> GIT / GITHUB
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> UI/UX DESIGN (FIGMA)
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> AGILE / SCRUM
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-surface-tint" /> SEO OPTIMIZATION
-                  </li>
-                </ul>
-              </div>
+              {skillCategories.map((category) => (
+                <div
+                  key={category.title}
+                  className="glass-card p-10 rounded-2xl border-l-4 border-l-surface-tint"
+                >
+                  <h3 className="font-headline-md text-headline-md mb-8">{category.title}</h3>
+                  <ul className="space-y-4 font-label-sm text-label-sm">
+                    {category.skills.map((skill) => {
+                      const Icon = skill.icon
+                      return (
+                        <li
+                          key={skill.name}
+                          className="flex items-center gap-3 text-on-surface hover:text-white transition-colors group"
+                        >
+                          <span className="size-5 flex items-center justify-center text-surface-tint shrink-0 group-hover:scale-110 transition-transform">
+                            <Icon className="size-4" />
+                          </span>
+                          <span>{skill.name}</span>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>
