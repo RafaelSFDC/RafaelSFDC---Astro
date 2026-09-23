@@ -1,6 +1,7 @@
 {
   "$schema": "https://developers.cloudflare.com/workers/wrangler/configuration-schema.json",
   "name": "rafael-sfdc-portfolio",
+  "main": "./dist/_worker.js/index.js",
   "compatibility_date": "2025-06-01",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
@@ -9,5 +10,18 @@
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "vars": {
+    "PUBLIC_APP_URL": "https://rafaelsfcarvalho.com"
+  },
+  "routes": [
+    {
+      "pattern": "rafaelsfcarvalho.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.rafaelsfcarvalho.com",
+      "custom_domain": true
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 export const SITE_URL =
-  import.meta.env.PUBLIC_APP_URL || "https://rafaelsfcarvalho.vercel.app";
+  import.meta.env.PUBLIC_APP_URL || "https://rafaelsfcarvalho.com";
 
 export const SITE_NAME = "Rafael SFDC";
 

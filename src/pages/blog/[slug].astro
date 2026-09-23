@@ -36,7 +36,7 @@ const cleanContent = (post.content || '')
   .replace(/<FAQSection[\s\S]*?\n\/>/g, '')
   .replace(/<WebStory>[\s\S]*?<\/WebStory>/g, '');
 const readingMinutes = Math.max(1, Math.round((post.content || '').split(/\s+/).length / 200));
-const SITE_URL = import.meta.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.vercel.app';
+const SITE_URL = import.meta.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.com';
 const postUrl = `${SITE_URL}/blog/${slug}`;
 const metaTitle = post.seo?.title || post.title;
 const metaDescription = post.seo?.description || post.excerpt;

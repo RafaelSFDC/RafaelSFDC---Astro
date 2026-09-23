@@ -1,6 +1,6 @@
 # **RAFAEL SILVA FERREIRA DE CARVALHO**
 
-[(21) 97967-4045](https://wa.me/5521979674045) | [rafaelsfcarvalho@outlook.com](mailto:rafaelsfcarvalho@outlook.com) | [Portfólio](https://rafaelsfcarvalho.vercel.app/) | [GitHub](https://github.com/RafaelSFDC) | [LinkedIn](https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho)
+[(21) 97967-4045](https://wa.me/5521979674045) | [rafaelsfcarvalho@outlook.com](mailto:rafaelsfcarvalho@outlook.com) | [Portfólio](https://rafaelsfcarvalho.com/) | [GitHub](https://github.com/RafaelSFDC) | [LinkedIn](https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho)
 
 **Resumo Profissional**  
 Desenvolvedor Full-Stack com 6 anos de experiência como freelancer, especializado no desenvolvimento de soluções digitais completas, desde sistemas de gestão robustos (CRM) até aplicações móveis. Expertise em arquitetura de software moderna, integração de APIs e criação de interfaces focadas na experiência do usuário (UX), com domínio pleno do ecossistema React.

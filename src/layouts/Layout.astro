@@ -19,7 +19,7 @@ const {
   noindex = false,
 } = Astro.props;
 
-const SITE_URL = import.meta.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.vercel.app';
+const SITE_URL = import.meta.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.com';
 const SITE_NAME = 'Rafael SFDC';
 const canonicalURL = new URL(canonical, SITE_URL).toString();
 const ogImageURL = ogImage.startsWith('http') ? ogImage : new URL(ogImage, SITE_URL).toString();

@@ -13,7 +13,7 @@ const srcDir = fileURLToPath(new URL('./src', import.meta.url));
 // Portfolio Rafael SFDC — migrado de Next.js 15
 // Deploy: Cloudflare Workers/Pages (static por padrão = 100% compatível + grátis)
 export default defineConfig({
-  site: process.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.vercel.app',
+  site: process.env.PUBLIC_APP_URL || 'https://rafaelsfcarvalho.com',
   output: 'static',
   adapter: cloudflare(),
   integrations: [

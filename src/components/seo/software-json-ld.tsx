@@ -1,4 +1,5 @@
 import { WithContext, SoftwareApplication } from "schema-dts";
+import { SITE_URL } from "@/lib/site";
 
 export function SoftwareJsonLd() {
   const jsonLd: WithContext<SoftwareApplication> = {
@@ -7,7 +8,7 @@ export function SoftwareJsonLd() {
     name: "RafaelSFDC",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    url: "https://rafaelsfcarvalho.vercel.app",
+    url: SITE_URL,
     description:
       "Blog estratégico com foco em e-commerce, SEO e marketing digital.",
     offers: {
