@@ -10,8 +10,8 @@ export const sites: ProjectDetails[] = [
       "Site institucional com apresentação de cursos, metodologia de ensino e área de matrículas online — projetado para conversão.",
     longDescription:
       "A Escola Criativa precisava de uma presença digital que comunicasse com clareza sua proposta pedagógica diferenciada e convertesse visitantes em alunos matriculados. O projeto incluiu arquitetura de informação focada em conversão, galeria de cursos, depoimentos de alunos e sistema de matrículas online integrado.",
-    image: "/placeholder.svg",
-    images: ["/placeholder.svg"],
+    image: "/escola-criativa.png",
+    images: ["/escola-criativa.png"],
     status: "private",
     technologies: [
       { name: "WordPress" },
@@ -46,8 +46,8 @@ export const sites: ProjectDetails[] = [
       "Site corporativo que posiciona a Promind como referência em consultoria, com design profissional e geração de leads integrada.",
     longDescription:
       "A Promind precisava de um site que transmitisse autoridade e credibilidade no mercado de consultoria empresarial. O projeto entregou um site corporativo com páginas institucionais completas, blog para geração de conteúdo e formulário de contato integrado — tudo otimizado para conversão e SEO.",
-    image: "/placeholder.svg",
-    images: ["/placeholder.svg"],
+    image: "/promind-consultoria.png",
+    images: ["/promind-consultoria.png"],
     status: "private",
     technologies: [
       { name: "WordPress" },
@@ -81,8 +81,8 @@ export const sites: ProjectDetails[] = [
       "Site com catálogo completo de máquinas para locação e sistema de solicitação de orçamento online — gerando leads mesmo fora do horário comercial.",
     longDescription:
       "A Alucamp precisava digitalizar seu processo comercial e permitir que clientes da construção civil solicitassem orçamentos a qualquer hora. O projeto entregou um catálogo digital completo com fichas técnicas de equipamentos, fotos de qualidade e sistema de solicitação de orçamento integrado que notifica a equipe em tempo real.",
-    image: "/placeholder.svg",
-    images: ["/placeholder.svg"],
+    image: "/alucamp-maquinas.png",
+    images: ["/alucamp-maquinas.png"],
     status: "private",
     technologies: [
       { name: "WordPress" },

@@ -10,8 +10,8 @@ export const sistemas: ProjectDetails[] = [
       "Sistema white label para restaurantes: cardápio digital, pedidos via WhatsApp, painel administrativo completo — tudo sob sua marca.",
     longDescription:
       "PedeFácil é um sistema completo e moderno para restaurantes que desejam digitalizar sua operação de pedidos — disponível para licenciamento sob a sua marca. A plataforma oferece um cardápio digital mobile-first, checkout integrado com WhatsApp, gestão de menu, categorias, produtos, variações, adicionais, preços, disponibilidade, importação/exportação CSV, cupons de desconto, zonas de entrega por bairro, relatórios operacionais e um painel administrativo completo com autenticação segura. Construído com TanStack Start, React 19, Drizzle ORM e Cloudflare D1/R2 para máxima performance e escalabilidade.",
-    image: "/placeholder.svg",
-    images: ["/placeholder.svg"],
+    image: "/home-page.png",
+    images: ["/home-page.png", "/buscar-page.png", "/filter-pizzas.png", "/after-add-to-cart.png"],
     status: "private",
     technologies: [
       { name: "TanStack Start" },
