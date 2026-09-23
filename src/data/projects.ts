@@ -10,8 +10,8 @@ export const projects: ProjectDetails[] = [
       "Plataforma completa de catálogo e comunidade com estante pessoal, controle de progresso, feed colaborativo e chat em tempo real.",
     longDescription:
       "Reroll é uma plataforma de catálogo e comunidade estilo Discord e MyAnimeList, permitindo aos usuários organizarem animes, mangás, manhwas, séries, filmes, livros e games em um só lugar. O sistema conta com acompanhamento dinâmico de progresso (capítulos e episódios), notas, status, tier lists interativas (drag-and-drop), feed de atualizações por servidor e canais de texto e voz com chat em tempo real via Cloudflare Durable Objects e WebRTC. Construído com TanStack Start, React 19, Drizzle ORM, Better Auth e Cloudflare Workers (D1, R2 e Durable Objects).",
-    image: "/reroll-home.png",
-    images: ["/reroll-home.png", "/reroll-features.png", "/reroll-signin.png"],
+    image: "/reroll-home.webp",
+    images: ["/reroll-home.webp", "/reroll-features.webp", "/reroll-signin.webp"],
     status: "public",
     technologies: [
       { name: "TanStack Start" },
@@ -149,8 +149,8 @@ export const projects: ProjectDetails[] = [
       "Dashboard universitário completo para gestão acadêmica, com controle de alunos, disciplinas e relatórios inteligentes.",
     longDescription:
       "UniLink simplifica a administração acadêmica de ponta a ponta — do cadastro de alunos à emissão de relatórios de desempenho. A plataforma oferece gestão de turmas, controle de frequência, notas e um painel intuitivo para coordenadores e professores. Construído com Laravel + React para máxima performance em grandes volumes de dados.",
-    image: "/unilink-home.png",
-    images: ["/unilink-home.png"],
+    image: "/unilink-home.webp",
+    images: ["/unilink-home.webp"],
     status: "public",
     technologies: [
       { name: "Laravel" },

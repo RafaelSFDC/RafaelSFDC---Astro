@@ -155,7 +155,7 @@ export default function Home() {
   }) => (
     <div className="flex items-center gap-4 mb-12">
       <div className="text-surface-tint">
-        <Icon size={32} />
+        <Icon size={32} aria-hidden="true" />
       </div>
       <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">
         {children}
@@ -172,6 +172,8 @@ export default function Home() {
             alt={project.title}
             width={800}
             height={600}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500" />
@@ -288,7 +290,7 @@ export default function Home() {
                     <div>
                       <div className="flex items-center gap-3 mb-6">
                         <span className="size-9 rounded-lg bg-surface-tint/10 flex items-center justify-center text-surface-tint shrink-0">
-                          <CategoryIcon className="size-5" />
+                          <CategoryIcon className="size-5" aria-hidden="true" />
                         </span>
                         <h3 className="font-headline-md text-xl font-bold text-white tracking-tight">
                           {category.title}
@@ -303,7 +305,7 @@ export default function Home() {
                               className="flex items-center gap-3 text-on-surface hover:text-white transition-colors group"
                             >
                               <span className="size-5 flex items-center justify-center text-surface-tint shrink-0 group-hover:scale-110 transition-transform">
-                                <Icon className="size-4" />
+                                <Icon className="size-4" aria-hidden="true" />
                               </span>
                               <span className="text-xs md:text-sm font-medium">{skill.name}</span>
                             </li>

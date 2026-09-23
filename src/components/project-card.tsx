@@ -39,6 +39,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alt={`${project.title} Project`}
             width={600}
             height={400}
+            loading="lazy"
+            decoding="async"
             className={cn(
               "project-image h-full w-full object-cover grayscale-[0.2] transition-all duration-700 group-hover:grayscale-0",
               isPrivate && "opacity-40"

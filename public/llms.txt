@@ -8,9 +8,9 @@
 - Localização: Rio de Janeiro, Brasil
 - Email: rafaelsfcarvalho@outlook.com
 - Telefone / WhatsApp: +55 (21) 97967-4045
-- GitHub: https://github.com/RafaelSFDC
-- LinkedIn: https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho
-- Website Principal: https://rafaelsfcarvalho.com
+- [GitHub](https://github.com/RafaelSFDC): Perfil oficial no GitHub com repositórios e projetos open-source
+- [LinkedIn](https://www.linkedin.com/in/rafael-silva-ferreira-de-carvalho): Perfil profissional no LinkedIn
+- [Website](https://rafaelsfcarvalho.com): Portfólio oficial
 
 ## Stack Tecnológica & Competências
 - Frontend & Web: React 19, Next.js (App Router, SSR, SSG), Astro, TanStack (Start, Router, Query), TypeScript, Tailwind CSS (v3 / v4), React Native.
@@ -20,22 +20,18 @@
 - DevOps, Qualidade & SEO: Core Web Vitals, SEO Técnico, Otimização de Performance, Docker, Git / GitHub CI/CD, Metodologias Ágeis (Scrum), UI/UX Design (Figma).
 
 ## Principais Produtos SaaS & Projetos
-- Reroll: Plataforma completa de catálogo e comunidade social para animes, mangás, games, séries e livros. Possui chat em tempo real via Cloudflare Durable Objects, chamadas de voz P2P com WebRTC, TanStack Start, React 19, Drizzle ORM, Cloudflare D1 e Better Auth.
-  - Link de Demonstração: https://reroll.rafaelsfcarvalho.workers.dev/
-  - Código: https://github.com/RafaelSFDC/Reroll
-- Kataly: Plataforma SaaS all-in-one multi-workspace para negócios digitais com 4 verticais (Lojas, Restaurantes, Serviços e Imobiliárias), sub-sites públicos, WhatsApp Cloud API oficial (Meta) com IA (Gemini), workflows em nós (XY Flow), Puck CMS, CRM e checkout transparente. Construído com TanStack Start, React 19, Cloudflare Edge (D1, R2, Durable Objects) e Drizzle ORM.
-  - Link: https://kataly.com.br
-  - Código: https://github.com/RafaelSFDC/kataly
-- PedeFácil: Sistema completo de cardápio digital, gestão de pedidos e delivery para restaurantes e pizzarias, integrando painel administrativo e checkout direto no WhatsApp.
-- VendaFácil: Solução para automação de checkout, catálogo interativo e vendas no varejo.
-- UniLink: Dashboard analítico e encurtador inteligente de links com métricas de cliques e conversão em tempo real.
+- [Reroll](https://reroll.rafaelsfcarvalho.workers.dev/): Plataforma completa de catálogo e comunidade social para animes, mangás, games, séries e livros com chat em tempo real via Cloudflare Durable Objects e WebRTC. [Código](https://github.com/RafaelSFDC/Reroll)
+- [Kataly](https://kataly.com.br): Plataforma SaaS all-in-one multi-workspace para negócios digitais com 4 verticais, WhatsApp Cloud API oficial com IA, workflows em nós e Cloudflare Edge. [Código](https://github.com/RafaelSFDC/kataly)
+- [PedeFácil](https://rafaelsfcarvalho.com/pedefacil): Sistema completo de cardápio digital white label, gestão de pedidos e delivery para restaurantes e pizzarias integrado ao WhatsApp.
+- [UniLink](https://github.com/RafaelSFDC/unilink): Dashboard universitário e sistema de gestão acadêmica completo em Laravel e React.
+- [Lumina](https://github.com/RafaelSFDC/lumina): CMS editorial moderno e open source construído sobre TanStack Start e Cloudflare.
 
-## Estrutura do Site & Links Principais
-- Início: https://rafaelsfcarvalho.com/
-- Produtos SaaS: https://rafaelsfcarvalho.com/#projetos
-- Trabalhos & Projetos de Clientes: https://rafaelsfcarvalho.com/#trabalhos
-- Habilidades Técnicas: https://rafaelsfcarvalho.com/#habilidades
-- Sobre: https://rafaelsfcarvalho.com/#sobre
-- Blog & Artigos: https://rafaelsfcarvalho.com/blog
-- Contato: https://rafaelsfcarvalho.com/#contato
-- Currículo em Markdown: https://rafaelsfcarvalho.com/Curriculo_Rafael_Carvalho.md
+## Links do Site & Documentação
+- [Início](https://rafaelsfcarvalho.com/): Página inicial do portfólio com visão geral de projetos e habilidades
+- [Produtos SaaS](https://rafaelsfcarvalho.com/#projetos): Seção com os principais sistemas SaaS em produção
+- [Trabalhos & Clientes](https://rafaelsfcarvalho.com/#trabalhos): Projetos corporativos e sites desenvolvidos para clientes
+- [Habilidades Técnicas](https://rafaelsfcarvalho.com/#habilidades): Stack detalhada, tecnologias frontend, backend, bancos e edge
+- [Sobre Mim](https://rafaelsfcarvalho.com/#sobre): Trajetória profissional, metodologia de trabalho e experiência
+- [Blog & Artigos](https://rafaelsfcarvalho.com/blog): Artigos técnicos sobre desenvolvimento web, arquitetura e SEO
+- [Contato](https://rafaelsfcarvalho.com/#contato): Formulário de contato direto e canais de atendimento
+- [Currículo em Markdown](https://rafaelsfcarvalho.com/Curriculo_Rafael_Carvalho.md): Versão completa do currículo estruturada em Markdown

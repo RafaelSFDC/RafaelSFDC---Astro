@@ -103,22 +103,22 @@ const faqs = [
 
 const showcaseImages = [
   {
-    src: "/home-page.png",
+    src: "/home-page.webp",
     alt: "Cardápio digital do PedeFacil - Página Inicial",
     label: "Cardápio Mobile-First",
   },
   {
-    src: "/buscar-page.png",
+    src: "/buscar-page.webp",
     alt: "Busca rápida de produtos",
     label: "Busca Dinâmica",
   },
   {
-    src: "/filter-pizzas.png",
+    src: "/filter-pizzas.webp",
     alt: "Filtros por categorias e tags",
     label: "Filtros Personalizados",
   },
   {
-    src: "/after-add-to-cart.png",
+    src: "/after-add-to-cart.webp",
     alt: "Fluxo de checkout e carrinho estruturado",
     label: "Carrinho & Checkout",
   },
@@ -448,8 +448,9 @@ function Showcase() {
               <img
                 src={showcaseImages[active].src}
                 alt={showcaseImages[active].alt}
-                fill
-                className="object-cover"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
                 <p className="text-white font-headline-sm">
@@ -487,8 +488,9 @@ function Showcase() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  fill
-                  className="object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
                 />
               </button>
             ))}
