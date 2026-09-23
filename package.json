@@ -6,8 +6,8 @@
         "preview": "astro preview",
         "build": "astro build",
         "dev": "astro dev",
-        "cf:preview": "wrangler dev",
-        "deploy": "astro build && wrangler deploy"
+        "cf:preview": "wrangler pages dev dist",
+        "deploy": "astro build && wrangler pages deploy dist"
     },
     "keywords": [],
     "author": "",
