@@ -19,54 +19,92 @@ import {
   Mail,
   Smartphone,
   Kanban,
+  Layout,
+  Server,
+  Database,
+  Monitor,
+  Zap,
+  ShieldCheck,
 } from "lucide-react"
 import {
-  SiHtml5,
-  SiJavascript,
   SiReact,
-  SiVuedotjs,
+  SiNextdotjs,
+  SiReactquery,
+  SiTypescript,
   SiTailwindcss,
+  SiAstro,
   SiNodedotjs,
   SiPhp,
+  SiLaravel,
+  SiCloudflare,
   SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiDrizzle,
+  SiPrisma,
   SiRedis,
+  SiTauri,
+  SiRust,
   SiDocker,
   SiGit,
   SiFigma,
+  SiGooglegemini,
+  SiWebrtc,
 } from "react-icons/si"
-import { TbApi, TbSeo } from "react-icons/tb"
 import { ProjectLandingModal } from "@/components/project-landing-modal"
 import type { ProjectDetails } from "@/types/project"
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Frontend & Web",
+    icon: Layout,
     skills: [
-      { name: "HTML / CSS", icon: SiHtml5 },
-      { name: "JAVASCRIPT / TYPESCRIPT", icon: SiJavascript },
-      { name: "REACT / NEXT.JS", icon: SiReact },
-      { name: "VUE.JS", icon: SiVuedotjs },
-      { name: "TAILWIND CSS", icon: SiTailwindcss },
+      { name: "React & React 19", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "TanStack (Start / Router / Query)", icon: SiReactquery },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Astro (SSG / SSR)", icon: SiAstro },
+      { name: "React Native (Mobile)", icon: Smartphone },
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Edge",
+    icon: Server,
     skills: [
-      { name: "NODE.JS / EXPRESS", icon: SiNodedotjs },
-      { name: "PHP / LARAVEL", icon: SiPhp },
-      { name: "POSTGRESQL / MONGODB", icon: SiPostgresql },
-      { name: "REDIS / FIREBASE", icon: SiRedis },
-      { name: "RESTful APIs", icon: TbApi },
+      { name: "Node.js & Express", icon: SiNodedotjs },
+      { name: "PHP & Laravel", icon: SiLaravel },
+      { name: "Cloudflare Workers & Pages", icon: SiCloudflare },
+      { name: "Durable Objects & WebSockets", icon: Zap },
+      { name: "WebRTC (P2P Audio & Mesh)", icon: SiWebrtc },
+      { name: "Better Auth (OAuth & JWT)", icon: ShieldCheck },
+      { name: "Integração IA (Gemini & AI SDK)", icon: SiGooglegemini },
     ],
   },
   {
-    title: "Workflow",
+    title: "Bancos & Storage",
+    icon: Database,
     skills: [
-      { name: "DOCKER / CI-CD", icon: SiDocker },
-      { name: "GIT / GITHUB", icon: SiGit },
-      { name: "UI/UX DESIGN (FIGMA)", icon: SiFigma },
-      { name: "AGILE / SCRUM", icon: Kanban },
-      { name: "SEO OPTIMIZATION", icon: TbSeo },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MySQL", icon: SiMysql },
+      { name: "SQLite (Local & Embedded)", icon: SiSqlite },
+      { name: "Cloudflare D1 (Serverless SQL)", icon: SiCloudflare },
+      { name: "Drizzle ORM & Kit", icon: SiDrizzle },
+      { name: "Prisma ORM", icon: SiPrisma },
+      { name: "Redis & Cache Estruturado", icon: SiRedis },
+    ],
+  },
+  {
+    title: "Desktop & DevOps",
+    icon: Monitor,
+    skills: [
+      { name: "Tauri (Desktop Apps)", icon: SiTauri },
+      { name: "Rust (Performance & Core)", icon: SiRust },
+      { name: "Cloudflare R2 (Object Storage)", icon: SiCloudflare },
+      { name: "Docker & Conteinerização", icon: SiDocker },
+      { name: "Git, GitHub & CI/CD", icon: SiGit },
+      { name: "UI/UX Design (Figma)", icon: SiFigma },
+      { name: "Metodologias Ágeis (Scrum)", icon: Kanban },
     ],
   },
 ]
@@ -237,31 +275,43 @@ export default function Home() {
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <SectionHeading icon={Code2}>Habilidades Técnicas</SectionHeading>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              {skillCategories.map((category) => (
-                <div
-                  key={category.title}
-                  className="glass-card p-10 rounded-2xl border-l-4 border-l-surface-tint"
-                >
-                  <h3 className="font-headline-md text-headline-md mb-8">{category.title}</h3>
-                  <ul className="space-y-4 font-label-sm text-label-sm">
-                    {category.skills.map((skill) => {
-                      const Icon = skill.icon
-                      return (
-                        <li
-                          key={skill.name}
-                          className="flex items-center gap-3 text-on-surface hover:text-white transition-colors group"
-                        >
-                          <span className="size-5 flex items-center justify-center text-surface-tint shrink-0 group-hover:scale-110 transition-transform">
-                            <Icon className="size-4" />
-                          </span>
-                          <span>{skill.name}</span>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+              {skillCategories.map((category) => {
+                const CategoryIcon = category.icon
+                return (
+                  <div
+                    key={category.title}
+                    className="glass-card p-6 md:p-8 rounded-2xl border-l-4 border-l-surface-tint flex flex-col justify-between hover:border-l-primary transition-all duration-300"
+                  >
+                    <div>
+                      <div className="flex items-center gap-3 mb-6">
+                        <span className="size-9 rounded-lg bg-surface-tint/10 flex items-center justify-center text-surface-tint shrink-0">
+                          <CategoryIcon className="size-5" />
+                        </span>
+                        <h3 className="font-headline-md text-xl font-bold text-white tracking-tight">
+                          {category.title}
+                        </h3>
+                      </div>
+                      <ul className="space-y-3.5 font-label-sm text-label-sm">
+                        {category.skills.map((skill) => {
+                          const Icon = skill.icon
+                          return (
+                            <li
+                              key={skill.name}
+                              className="flex items-center gap-3 text-on-surface hover:text-white transition-colors group"
+                            >
+                              <span className="size-5 flex items-center justify-center text-surface-tint shrink-0 group-hover:scale-110 transition-transform">
+                                <Icon className="size-4" />
+                              </span>
+                              <span className="text-xs md:text-sm font-medium">{skill.name}</span>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>

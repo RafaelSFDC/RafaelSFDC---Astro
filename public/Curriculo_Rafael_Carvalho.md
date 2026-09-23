@@ -23,7 +23,8 @@ Desenvolvedor Full-Stack com 6 anos de experiência como freelancer, especializa
 - **Gestão Centralizada (Back-Office):** Sistema robusto para controle de vendas, estoque e base de clientes com foco em escalabilidade e performance
 
 **Habilidades Técnicas**  
-**Frontend & Mobile :** React | React Native | NextJS | Html | Css | Tailwind | JavaScript | TypeScript  
-**Backend & Banco de Dados :** NodeJS | Express | PHP | Laravel | SQL | noSQL | MongoDB | Redis  
-**Outros :** OAuth | JWT | Git | Docker | Scrum | Agile | Prisma  
+**Frontend & Mobile :** React (React 19) | Next.js | TanStack (Start, Router, Query) | TypeScript | Tailwind CSS | Astro | React Native  
+**Backend & Cloud Edge :** Node.js | Express | PHP | Laravel | Cloudflare Workers & Pages | Durable Objects (WebSockets) | WebRTC | Better Auth | IA SDK & Gemini  
+**Bancos de Dados & Storage :** PostgreSQL | MySQL | SQLite | Cloudflare D1 | Drizzle ORM | Prisma | Redis | Cloudflare R2  
+**Desktop & DevOps :** Tauri (Desktop) | Rust | Docker | Git & GitHub Actions (CI/CD) | Figma (UI/UX) | Scrum / Kanban  
 **Idiomas :** Inglês avançado
