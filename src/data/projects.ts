@@ -2,6 +2,71 @@ import type { ProjectDetails } from "@/types/project";
 
 export const projects: ProjectDetails[] = [
   {
+    id: "reroll",
+    type: "saas",
+    title: "Reroll",
+    tagline: "Sua estante pessoal de animes, mangás, séries, livros e games",
+    description:
+      "Plataforma completa de catálogo e comunidade com estante pessoal, controle de progresso, feed colaborativo e chat em tempo real.",
+    longDescription:
+      "Reroll é uma plataforma de catálogo e comunidade estilo Discord e MyAnimeList, permitindo aos usuários organizarem animes, mangás, manhwas, séries, filmes, livros e games em um só lugar. O sistema conta com acompanhamento dinâmico de progresso (capítulos e episódios), notas, status, tier lists interativas (drag-and-drop), feed de atualizações por servidor e canais de texto e voz com chat em tempo real via Cloudflare Durable Objects e WebRTC. Construído com TanStack Start, React 19, Drizzle ORM, Better Auth e Cloudflare Workers (D1, R2 e Durable Objects).",
+    image: "/reroll-home.png",
+    images: ["/reroll-home.png", "/reroll-features.png", "/reroll-signin.png"],
+    status: "public",
+    technologies: [
+      { name: "TanStack Start" },
+      { name: "React 19" },
+      { name: "Cloudflare D1 & R2" },
+      { name: "Durable Objects" },
+      { name: "Drizzle ORM" },
+      { name: "Better Auth" },
+      { name: "Tailwind CSS v4" },
+      { name: "WebRTC" },
+    ],
+    demoUrl: "https://reroll.rafaelsfcarvalho.workers.dev/",
+    codeUrl: "https://github.com/RafaelSFDC/Reroll",
+    features: [
+      "Catálogo completo para 10+ tipos de mídias (animes, mangás, séries, livros, games)",
+      "Acompanhamento ágil de progresso com barra de status e atalhos rápidos",
+      "Workspaces e servidores estilo Discord com feed de atividades em tempo real",
+      "Chat em tempo real com canais, threads e mensagens via Durable Objects",
+      "Chamadas de voz P2P em malha WebRTC sem necessidade de servidor de mídia dedicado",
+      "Tier List interativa drag-and-drop e métricas de consumo de mídia",
+      "Autenticação moderna com Better Auth e uploads com Cloudflare R2",
+    ],
+    results: [
+      { label: "Tipos de mídia", value: "10+" },
+      { label: "Tempo Real", value: "Durable Objects" },
+      { label: "Chamadas", value: "WebRTC P2P" },
+      { label: "Infraestrutura", value: "Cloudflare Edge" },
+    ],
+    highlights: [
+      {
+        title: "Estante Pessoal & Social",
+        description: "Controle individual detalhado de consumo integrado ao feed compartilhado do servidor com amigos.",
+        icon: "layers",
+      },
+      {
+        title: "Edge Realtime",
+        description: "Comunicação instantânea e persistente através de WebSockets com Cloudflare Durable Objects e banco D1.",
+        icon: "zap",
+      },
+      {
+        title: "Comunidade Estilo Discord",
+        description: "Servidores compartilhados com canais temáticos, cargos, reações e chamadas de voz P2P.",
+        icon: "users",
+      },
+    ],
+    challenges: [
+      "Arquitetura serverless edge com Durable Objects para gerenciar conexões WebSocket",
+      "Implementação de malha WebRTC mesh direta para chamadas de áudio entre membros",
+      "Modelagem e sincronização relacional no Cloudflare D1 com Drizzle ORM",
+      "Renderização SSR reativa com TanStack Start e React 19",
+    ],
+    year: 2026,
+    category: "SaaS / Plataforma Social",
+  },
+  {
     id: "kataly",
     type: "saas",
     title: "Kataly",
