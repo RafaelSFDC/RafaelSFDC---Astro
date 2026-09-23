@@ -10,8 +10,7 @@ import HeroHeader from "@/components/header"
 import DownloadResume from "@/components/download-resume"
 import {
   FolderKanban,
-  Globe,
-  Terminal,
+  Briefcase,
   Code2,
   Search,
   CheckCircle,
@@ -100,6 +99,7 @@ export default function Home() {
           <div className="flex gap-4">
             <button
               onClick={() => setDetailsProject(project)}
+              aria-label={`Ver detalhes de ${project.title}`}
               className="px-6 py-3 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center gap-2 hover:brightness-110 transition-all text-sm"
             >
               <Eye className="size-4" /> Detalhes
@@ -144,36 +144,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sites */}
+        {/* Trabalhos */}
         <section
-          id="sites"
+          id="trabalhos"
           className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
         >
-          <SectionHeading icon={Globe}>Projetos de Clientes</SectionHeading>
+          <SectionHeading icon={Briefcase}>Trabalhos</SectionHeading>
 
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
             ref={addToRefs}
           >
             {sites.map((site) => (
-              <SiteCard key={site.id} project={site} />
+              <SiteCard key={site.id} project={site} badge="Cliente" />
             ))}
-          </div>
-        </section>
-
-        {/* Sistemas */}
-        <section
-          id="sistemas"
-          className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap"
-        >
-          <SectionHeading icon={Terminal}>Sistemas White Label</SectionHeading>
-
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
-            ref={addToRefs}
-          >
             {sistemas.map((sistema) => (
-              <SiteCard key={sistema.id} project={sistema} />
+              <SiteCard key={sistema.id} project={sistema} badge="White Label" />
             ))}
           </div>
         </section>
@@ -323,8 +309,8 @@ export default function Home() {
               Vamos Conversar?
             </h2>
             <p className="text-on-surface-variant max-w-xl mx-auto mb-12">
-              Estou sempre aberto a novos desafios e parcerias inovadoras. Vamos
-              transformar sua ideia em realidade digital.
+              Conte com quem já entregou 30+ projetos: SaaS, sistemas e sites
+              que performam. Chama no email, no telefone ou no LinkedIn.
             </p>
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-12">
@@ -338,7 +324,7 @@ export default function Home() {
                 <span className="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">
                   Email
                 </span>
-                <span className="font-headline-md text-headline-md group-hover:text-surface-tint transition-colors">
+                <span className="font-headline-md text-2xl md:text-headline-md break-all group-hover:text-surface-tint transition-colors">
                   rafaelsfcarvalho@outlook.com
                 </span>
               </a>

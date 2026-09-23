@@ -72,7 +72,7 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
       >
         {images.map((src, i) => (
           <div key={i} className="relative h-full w-full flex-shrink-0">
-            <img src={src || "/placeholder.svg"} alt={`${title} screenshot ${i + 1}`} fill className="object-cover" />
+            <img src={src || "/placeholder.svg"} alt={`${title} screenshot ${i + 1}`} className="h-full w-full object-cover" />
           </div>
         ))}
       </div>
@@ -84,12 +84,14 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
         <>
           <button
             onClick={prev}
+            aria-label="Imagem anterior"
             className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 border border-white/10 flex items-center justify-center hover:bg-black/80 transition-all backdrop-blur-sm z-10"
           >
             <ChevronLeft className="w-4 h-4 text-white" />
           </button>
           <button
             onClick={next}
+            aria-label="Próxima imagem"
             className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 border border-white/10 flex items-center justify-center hover:bg-black/80 transition-all backdrop-blur-sm z-10"
           >
             <ChevronRight className="w-4 h-4 text-white" />
@@ -101,6 +103,7 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
+                aria-label={`Ver imagem ${i + 1} de ${title}`}
                 className={`h-1.5 rounded-full transition-all ${i === current ? "w-6 bg-[#FD4E27]" : "w-1.5 bg-white/40"}`}
               />
             ))}
@@ -147,20 +150,6 @@ function HighlightsGrid({ highlights }: { highlights: NonNullable<ProjectDetails
   )
 }
 
-// ─── Results Bar ──────────────────────────────────────────────────────────────
-function ResultsBar({ results }: { results: NonNullable<ProjectDetails["results"]> }) {
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8 rounded-xl overflow-hidden border border-white/8">
-      {results.map((r, i) => (
-        <div key={i} className="bg-[#050505] p-5 flex flex-col gap-1 text-center">
-          <span className="text-2xl font-bold text-[#FD4E27] font-display">{r.value}</span>
-          <span className="text-white/40 text-xs uppercase tracking-widest">{r.label}</span>
-        </div>
-      ))}
-    </div>
-  )
-}
-
 // ─── Section Title ─────────────────────────────────────────────────────────────
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -178,7 +167,7 @@ function CTAPrimary({ href, children, icon: Icon }: { href: string; children: Re
       href={href}
       target={href.startsWith("http") ? "_blank" : "_self"}
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#FD4E27] text-black font-bold text-sm rounded-xl hover:bg-[#FD4E27] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-[#FD4E27]/20"
+      className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#FD4E27] text-black font-bold text-sm rounded-xl hover:bg-[#FD4E27] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg"
     >
       {Icon && <Icon className="w-4 h-4" />}
       {children}
@@ -210,15 +199,7 @@ function SaaSContent({ project }: { project: ProjectDetails }) {
   return (
     <div className="flex flex-col gap-10">
       {/* Carousel */}
-      <imgCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
-
-      {/* Results */}
-      {project.results && project.results.length > 0 && (
-        <div>
-          <SectionTitle>Números</SectionTitle>
-          <ResultsBar results={project.results} />
-        </div>
-      )}
+      <ImageCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
 
       {/* About */}
       <div>
@@ -284,7 +265,7 @@ function ClientContent({ project }: { project: ProjectDetails }) {
   return (
     <div className="flex flex-col gap-10">
       {/* Carousel */}
-      <imgCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
+      <ImageCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
 
       {/* Challenge / Context */}
       <div>
@@ -357,7 +338,7 @@ function WhiteLabelContent({ project }: { project: ProjectDetails }) {
   return (
     <div className="flex flex-col gap-10">
       {/* Carousel */}
-      <imgCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
+      <ImageCarousel images={project.images?.length ? project.images : [project.image]} title={project.title} />
 
       {/* Target Audience */}
       {project.targetAudience && (
@@ -449,7 +430,7 @@ function WhiteLabelContent({ project }: { project: ProjectDetails }) {
           
           <a
             href={project.landingPageUrl}
-            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#FD4E27] text-black font-bold text-xs rounded-xl hover:bg-[#FD4E27] hover:scale-[1.03] active:scale-[0.97] transition-all relative z-10 whitespace-nowrap shadow-lg shadow-[#FD4E27]/20"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#FD4E27] text-black font-bold text-xs rounded-xl hover:bg-[#FD4E27] hover:scale-[1.03] active:scale-[0.97] transition-all relative z-10 whitespace-nowrap shadow-lg"
           >
             Acessar Landing Page <ExternalLink className="w-3.5 h-3.5" />
           </a>
@@ -507,7 +488,7 @@ export function ProjectLandingModal({ project, open, onOpenChange }: ProjectLand
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-[#050505] border border-white/8 text-white max-w-4xl w-full max-h-[92vh] overflow-y-auto p-0 gap-0 rounded-2xl shadow-2xl shadow-black/80 [&>button]:hidden">
+      <DialogContent className="dialog-scroll bg-[#050505] border border-white/8 text-white w-full max-w-[calc(100vw-1.5rem)] sm:max-w-4xl max-h-[92vh] overflow-y-auto p-0 gap-0 rounded-2xl shadow-2xl shadow-black/80 [&>button]:hidden">
         {/* Hidden accessible title */}
         <DialogTitle className="sr-only">{project.title}</DialogTitle>
 

@@ -5,11 +5,10 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const homeMenuItems = [
-  { name: "Sobre", href: "#sobre" },
-  { name: "Skills", href: "#habilidades" },
   { name: "SaaS", href: "#projetos" },
-  { name: "Clientes", href: "#sites" },
-  { name: "White Label", href: "#sistemas" },
+  { name: "Trabalhos", href: "#trabalhos" },
+  { name: "Skills", href: "#habilidades" },
+  { name: "Sobre", href: "#sobre" },
   { name: "Blog", href: "/blog" },
   { name: "Contato", href: "#contato" },
 ];

@@ -1,11 +1,11 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
 
 const stats = [
   { value: "6+", label: "Anos de Experiência" },
   { value: "30+", label: "Projetos Entregues" },
-  { value: "Full-Stack", label: "React · Next.js · Laravel" },
+  { value: "2", label: "SaaS Próprios" },
 ];
 
 const Hero5 = () => {
@@ -21,16 +21,15 @@ const Hero5 = () => {
         Disponível para projetos
       </div>
 
-      <h1 className="font-body text-display-xl-mobile md:text-display-xl mb-6 max-w-4xl mx-auto">
-        Desenvolvo aplicações <br />
-        de alta performance
+      <h1 className="font-body text-display-xl-mobile md:text-display-xl mb-6 max-w-4xl mx-auto text-balance">
+        SaaS e sites que carregam rápido e convertem
         <span className="text-surface-tint animate-blink">_</span>
       </h1>
 
       <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
-        Sou Rafael, Desenvolvedor Full-Stack especializado em criar produtos digitais
-        velozes, otimizados para SEO e focados em conversão. Transformo ideias
-        complexas em código limpo e escalável.
+        Sou Rafael, desenvolvedor full-stack há 6+ anos. Construo SaaS,
+        sistemas e sites com performance, SEO técnico e foco em conversão —
+        do MVP à escala.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-stack-md">
@@ -61,6 +60,22 @@ const Hero5 = () => {
           </div>
         ))}
       </div>
+
+      <figure className="mt-12 w-full max-w-3xl glass-card rounded-2xl px-8 py-7 text-center">
+        <Quote className="size-6 text-surface-tint mx-auto mb-3" aria-hidden="true" />
+        <blockquote className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          “O site passou a imagem que precisávamos para fechar negócios maiores.”
+        </blockquote>
+        <figcaption className="mt-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
+          Diretoria Promind · site corporativo —{" "}
+          <a
+            href="#trabalhos"
+            className="text-surface-tint font-semibold normal-case tracking-normal hover:underline underline-offset-4"
+          >
+            ver cases de clientes
+          </a>
+        </figcaption>
+      </figure>
     </section>
   );
 };

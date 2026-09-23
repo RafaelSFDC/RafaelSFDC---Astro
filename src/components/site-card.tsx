@@ -7,9 +7,10 @@ import { ProjectLandingModal } from "@/components/project-landing-modal"
 
 interface SiteCardProps {
   project: ProjectDetails
+  badge?: "Cliente" | "White Label"
 }
 
-export function SiteCard({ project }: SiteCardProps) {
+export function SiteCard({ project, badge }: SiteCardProps) {
   const [showDetails, setShowDetails] = useState(false)
 
   return (
@@ -26,6 +27,17 @@ export function SiteCard({ project }: SiteCardProps) {
           <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500" />
         </div>
         <div className="p-8 flex flex-col flex-grow">
+          {badge && (
+            <span
+              className={`self-start mb-3 px-2.5 py-1 rounded-full border font-label-sm text-label-sm uppercase tracking-widest ${
+                badge === "White Label"
+                  ? "bg-surface-tint/10 border-surface-tint/25 text-surface-tint"
+                  : "bg-white/5 border-white/10 text-on-surface-variant"
+              }`}
+            >
+              {badge}
+            </span>
+          )}
           <h3 className="font-headline-md text-headline-md mb-2">{project.title}</h3>
           <p className="text-on-surface-variant mb-6 line-clamp-2">{project.description}</p>
           <div className="flex flex-wrap gap-2 mb-6">
@@ -46,6 +58,7 @@ export function SiteCard({ project }: SiteCardProps) {
           <div className="flex gap-3 mt-auto">
             <button
               onClick={() => setShowDetails(true)}
+              aria-label={`Ver detalhes de ${project.title}`}
               className="flex-1 px-4 py-2.5 bg-primary-container text-on-primary-container font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all text-xs"
             >
               <Info className="size-4" /> Detalhes

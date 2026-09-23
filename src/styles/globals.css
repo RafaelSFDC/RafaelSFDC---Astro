@@ -78,3 +78,44 @@
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
+
+/* Site-wide dark scrollbars (match theme, kill native white bars) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(253, 78, 39, 0.4) #0e0e0e;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+html::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 8px;
+  border: 2px solid #0e0e0e;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: rgba(253, 78, 39, 0.55);
+}
+
+/* Slim dark scrollbar for overlays/dialogs (brand thumb) */
+.dialog-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(253, 78, 39, 0.45) transparent;
+}
+.dialog-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.dialog-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dialog-scroll::-webkit-scrollbar-thumb {
+  background: rgba(253, 78, 39, 0.35);
+  border-radius: 8px;
+  border: 2px solid #050505;
+}
+.dialog-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(253, 78, 39, 0.6);
+}

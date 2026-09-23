@@ -7,7 +7,7 @@ export const projects: ProjectDetails[] = [
     title: "Kataly",
     tagline: "O Sistema Operacional para Negócios Digitais",
     description:
-      "Plataforma SaaS all-in-one que unifica CRM, Vendas, Page Builder e IA em um único ecossistema — do zero ao escala.",
+      "Plataforma SaaS all-in-one que unifica CRM, Vendas, Page Builder e IA em um único ecossistema — do zero à escala.",
     longDescription:
       "Kataly é o ecossistema completo para microempreendedores que precisam de potência enterprise sem a complexidade. A plataforma integra dashboard de gestão (Mission Control), editor visual de páginas drag-and-drop (Puck), assistente de IA nativo (Gemini) e automação de workflows — tudo em um só lugar. Com arquitetura SaaS multitenant em Next.js e Appwrite, escala do primeiro cliente até milhares.",
     image: "/optimized-app.webp",
